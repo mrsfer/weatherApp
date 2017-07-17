@@ -21,6 +21,14 @@
 		0B10CEB81F137E6700277212 /* WeatherDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10CEB71F137E6700277212 /* WeatherDataTableViewCell.swift */; };
 		0B10CEBA1F13815100277212 /* WeatherStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10CEB91F13815100277212 /* WeatherStruct.swift */; };
 		750337DE1F17EBD500D80AFA /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750337DD1F17EBD500D80AFA /* CoreDataService.swift */; };
+		7532FA621F1CA89600C23C84 /* Clear.mov in Resources */ = {isa = PBXBuildFile; fileRef = 7532FA5A1F1CA89600C23C84 /* Clear.mov */; };
+		7532FA631F1CA89600C23C84 /* Mist.mov in Resources */ = {isa = PBXBuildFile; fileRef = 7532FA5B1F1CA89600C23C84 /* Mist.mov */; };
+		7532FA641F1CA89600C23C84 /* Haze.mov in Resources */ = {isa = PBXBuildFile; fileRef = 7532FA5C1F1CA89600C23C84 /* Haze.mov */; };
+		7532FA651F1CA89600C23C84 /* Thunderstorm.mov in Resources */ = {isa = PBXBuildFile; fileRef = 7532FA5D1F1CA89600C23C84 /* Thunderstorm.mov */; };
+		7532FA661F1CA89600C23C84 /* Clouds.mov in Resources */ = {isa = PBXBuildFile; fileRef = 7532FA5E1F1CA89600C23C84 /* Clouds.mov */; };
+		7532FA671F1CA89600C23C84 /* Rain.mov in Resources */ = {isa = PBXBuildFile; fileRef = 7532FA5F1F1CA89600C23C84 /* Rain.mov */; };
+		7532FA681F1CA89600C23C84 /* Snow.mov in Resources */ = {isa = PBXBuildFile; fileRef = 7532FA601F1CA89600C23C84 /* Snow.mov */; };
+		7532FA691F1CA89600C23C84 /* Fog.mov in Resources */ = {isa = PBXBuildFile; fileRef = 7532FA611F1CA89600C23C84 /* Fog.mov */; };
 		756BE0641F122A5800139A41 /* WeatherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756BE0631F122A5800139A41 /* WeatherRequest.swift */; };
 		756BE0671F122EC600139A41 /* MapScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756BE0661F122EC600139A41 /* MapScreenPresenter.swift */; };
 		756BE0691F122EE200139A41 /* MapScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756BE0681F122EE200139A41 /* MapScreenModuleInput.swift */; };
@@ -33,12 +41,6 @@
 		756E32A11F1BA48E00E1B400 /* AlertScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756E32A01F1BA48E00E1B400 /* AlertScreenViewController.swift */; };
 		756E32A41F1BA7ED00E1B400 /* MapScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756E32A31F1BA7ED00E1B400 /* MapScreenRouter.swift */; };
 		756E32A61F1BA80E00E1B400 /* MapScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756E32A51F1BA80E00E1B400 /* MapScreenRouterInput.swift */; };
-		758D9A791F1BF1FF00400202 /* Clouds.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 758D9A731F1BF1FF00400202 /* Clouds.mp4 */; };
-		758D9A7A1F1BF1FF00400202 /* Thunderstorm.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 758D9A741F1BF1FF00400202 /* Thunderstorm.mp4 */; };
-		758D9A7B1F1BF1FF00400202 /* Snow.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 758D9A751F1BF1FF00400202 /* Snow.mp4 */; };
-		758D9A7C1F1BF1FF00400202 /* Haze.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 758D9A761F1BF1FF00400202 /* Haze.mp4 */; };
-		758D9A7D1F1BF1FF00400202 /* Mist.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 758D9A771F1BF1FF00400202 /* Mist.mp4 */; };
-		758D9A7E1F1BF1FF00400202 /* Clear.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 758D9A781F1BF1FF00400202 /* Clear.mp4 */; };
 		75E40CA81F11238F0063571D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E40CA71F11238F0063571D /* AppDelegate.swift */; };
 		75E40CAD1F11238F0063571D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E40CAB1F11238F0063571D /* Main.storyboard */; };
 		75E40CB01F11238F0063571D /* WeatherApp_IrinaFerber.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75E40CAE1F11238F0063571D /* WeatherApp_IrinaFerber.xcdatamodeld */; };
@@ -116,6 +118,14 @@
 		3B661E80316FDB8578020387 /* Pods-WeatherApp_IrinaFerber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp_IrinaFerber.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp_IrinaFerber/Pods-WeatherApp_IrinaFerber.release.xcconfig"; sourceTree = "<group>"; };
 		6465E1C7E48C5B41A2AC1242 /* Pods_WeatherApp_IrinaFerber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherApp_IrinaFerber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		750337DD1F17EBD500D80AFA /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		7532FA5A1F1CA89600C23C84 /* Clear.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Clear.mov; sourceTree = "<group>"; };
+		7532FA5B1F1CA89600C23C84 /* Mist.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Mist.mov; sourceTree = "<group>"; };
+		7532FA5C1F1CA89600C23C84 /* Haze.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Haze.mov; sourceTree = "<group>"; };
+		7532FA5D1F1CA89600C23C84 /* Thunderstorm.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Thunderstorm.mov; sourceTree = "<group>"; };
+		7532FA5E1F1CA89600C23C84 /* Clouds.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Clouds.mov; sourceTree = "<group>"; };
+		7532FA5F1F1CA89600C23C84 /* Rain.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Rain.mov; sourceTree = "<group>"; };
+		7532FA601F1CA89600C23C84 /* Snow.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Snow.mov; sourceTree = "<group>"; };
+		7532FA611F1CA89600C23C84 /* Fog.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Fog.mov; sourceTree = "<group>"; };
 		756BE0631F122A5800139A41 /* WeatherRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherRequest.swift; sourceTree = "<group>"; };
 		756BE0661F122EC600139A41 /* MapScreenPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapScreenPresenter.swift; sourceTree = "<group>"; };
 		756BE0681F122EE200139A41 /* MapScreenModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapScreenModuleInput.swift; sourceTree = "<group>"; };
@@ -128,14 +138,6 @@
 		756E32A01F1BA48E00E1B400 /* AlertScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertScreenViewController.swift; sourceTree = "<group>"; };
 		756E32A31F1BA7ED00E1B400 /* MapScreenRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapScreenRouter.swift; sourceTree = "<group>"; };
 		756E32A51F1BA80E00E1B400 /* MapScreenRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapScreenRouterInput.swift; sourceTree = "<group>"; };
-		758D9A711F1BED4400400202 /* Rain.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rain.mp4; sourceTree = "<group>"; };
-		758D9A721F1BED5A00400202 /* Fog.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fog.mp4; sourceTree = "<group>"; };
-		758D9A731F1BF1FF00400202 /* Clouds.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Clouds.mp4; sourceTree = "<group>"; };
-		758D9A741F1BF1FF00400202 /* Thunderstorm.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thunderstorm.mp4; sourceTree = "<group>"; };
-		758D9A751F1BF1FF00400202 /* Snow.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Snow.mp4; sourceTree = "<group>"; };
-		758D9A761F1BF1FF00400202 /* Haze.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Haze.mp4; sourceTree = "<group>"; };
-		758D9A771F1BF1FF00400202 /* Mist.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mist.mp4; sourceTree = "<group>"; };
-		758D9A781F1BF1FF00400202 /* Clear.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Clear.mp4; sourceTree = "<group>"; };
 		75E40CA41F11238E0063571D /* WeatherApp_IrinaFerber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp_IrinaFerber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E40CA71F11238F0063571D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75E40CAC1F11238F0063571D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -306,14 +308,14 @@
 		75CFE47F1F16B71D00CE791C /* Video */ = {
 			isa = PBXGroup;
 			children = (
-				758D9A731F1BF1FF00400202 /* Clouds.mp4 */,
-				758D9A741F1BF1FF00400202 /* Thunderstorm.mp4 */,
-				758D9A751F1BF1FF00400202 /* Snow.mp4 */,
-				758D9A761F1BF1FF00400202 /* Haze.mp4 */,
-				758D9A771F1BF1FF00400202 /* Mist.mp4 */,
-				758D9A781F1BF1FF00400202 /* Clear.mp4 */,
-				758D9A721F1BED5A00400202 /* Fog.mp4 */,
-				758D9A711F1BED4400400202 /* Rain.mp4 */,
+				7532FA5A1F1CA89600C23C84 /* Clear.mov */,
+				7532FA5B1F1CA89600C23C84 /* Mist.mov */,
+				7532FA5C1F1CA89600C23C84 /* Haze.mov */,
+				7532FA5D1F1CA89600C23C84 /* Thunderstorm.mov */,
+				7532FA5E1F1CA89600C23C84 /* Clouds.mov */,
+				7532FA5F1F1CA89600C23C84 /* Rain.mov */,
+				7532FA601F1CA89600C23C84 /* Snow.mov */,
+				7532FA611F1CA89600C23C84 /* Fog.mov */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -717,24 +719,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7532FA621F1CA89600C23C84 /* Clear.mov in Resources */,
 				0B10CEAB1F137BC200277212 /* SF-UI-Display-Bold.otf in Resources */,
+				7532FA631F1CA89600C23C84 /* Mist.mov in Resources */,
 				75E40CB51F11238F0063571D /* LaunchScreen.storyboard in Resources */,
+				7532FA671F1CA89600C23C84 /* Rain.mov in Resources */,
+				7532FA641F1CA89600C23C84 /* Haze.mov in Resources */,
 				0B10CEAE1F137BC200277212 /* SF-UI-Display-Medium.otf in Resources */,
-				758D9A791F1BF1FF00400202 /* Clouds.mp4 in Resources */,
-				758D9A7E1F1BF1FF00400202 /* Clear.mp4 in Resources */,
-				758D9A7D1F1BF1FF00400202 /* Mist.mp4 in Resources */,
 				75E40CB21F11238F0063571D /* Assets.xcassets in Resources */,
 				0B10CE9F1F136D7A00277212 /* ListOfWeather.storyboard in Resources */,
-				758D9A7C1F1BF1FF00400202 /* Haze.mp4 in Resources */,
-				758D9A7A1F1BF1FF00400202 /* Thunderstorm.mp4 in Resources */,
 				0B10CEAA1F137BC200277212 /* SF-UI-Display-Black.otf in Resources */,
 				0B10CEAD1F137BC200277212 /* SF-UI-Display-Light.otf in Resources */,
+				7532FA691F1CA89600C23C84 /* Fog.mov in Resources */,
 				75E40CAD1F11238F0063571D /* Main.storyboard in Resources */,
 				756E327F1F1BA03A00E1B400 /* AlertScreen.storyboard in Resources */,
+				7532FA681F1CA89600C23C84 /* Snow.mov in Resources */,
+				7532FA661F1CA89600C23C84 /* Clouds.mov in Resources */,
+				7532FA651F1CA89600C23C84 /* Thunderstorm.mov in Resources */,
 				0B10CEB11F137BC200277212 /* SF-UI-Display-Thin.otf in Resources */,
 				0B10CEB01F137BC200277212 /* SF-UI-Display-Semibold.otf in Resources */,
 				0B10CEAF1F137BC200277212 /* SF-UI-Display-Regular.otf in Resources */,
-				758D9A7B1F1BF1FF00400202 /* Snow.mp4 in Resources */,
 				0B10CEB21F137BC200277212 /* SF-UI-Display-Ultralight.otf in Resources */,
 				75E40D381F11610D0063571D /* Map.storyboard in Resources */,
 				0B10CEAC1F137BC200277212 /* SF-UI-Display-Heavy.otf in Resources */,

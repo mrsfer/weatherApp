@@ -45,8 +45,8 @@
                                             <action selector="okButton:" destination="HPg-a2-DDR" eventType="touchUpInside" id="PT3-4U-wnf"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Температура изменилась на 3 градуса" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOc-R7-eQE">
-                                        <rect key="frame" x="52" y="29" width="211" height="41"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Температура уменьшилась на 3 градуса" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOc-R7-eQE">
+                                        <rect key="frame" x="43.5" y="29" width="228" height="41"/>
                                         <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -60,7 +60,7 @@
                                     <constraint firstItem="AXV-ri-zI6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="QOc-R7-eQE" secondAttribute="bottom" constant="8" id="Mmo-ht-did"/>
                                     <constraint firstItem="QOc-R7-eQE" firstAttribute="top" secondItem="ckr-ag-Ard" secondAttribute="top" constant="29" id="Oyg-KO-3IY"/>
                                     <constraint firstItem="AXV-ri-zI6" firstAttribute="centerX" secondItem="ckr-ag-Ard" secondAttribute="centerX" id="nvS-Od-hJw"/>
-                                    <constraint firstItem="QOc-R7-eQE" firstAttribute="width" secondItem="ckr-ag-Ard" secondAttribute="width" multiplier="0.618" constant="16.330000000000013" id="rmr-GI-Byz"/>
+                                    <constraint firstItem="QOc-R7-eQE" firstAttribute="width" secondItem="ckr-ag-Ard" secondAttribute="width" multiplier="0.618" constant="33.330000000000013" id="rmr-GI-Byz"/>
                                     <constraint firstItem="AXV-ri-zI6" firstAttribute="width" secondItem="ckr-ag-Ard" secondAttribute="width" multiplier="0.295" constant="8.0750000000000028" id="vo9-j5-Gyd"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>

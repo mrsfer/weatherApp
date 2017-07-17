@@ -87,17 +87,17 @@ class WeatherDataTableViewCell: UITableViewCell {
         for i in 0..<videoNameArray.count {
             
             if videoName == videoNameArray[i] {
-                videoURL = Bundle.main.url(forResource: videoNameArray[i], withExtension: "mp4")
+                videoURL = Bundle.main.url(forResource: videoNameArray[i], withExtension: "mov")
             }
             print("WeatherDataTableViewCell/selectVideoWeatherType/videoName \(videoName)")
         }
         
         if videoName == "Smoke" {
-            videoURL = Bundle.main.url(forResource: "Mist", withExtension: "mp4")
+            videoURL = Bundle.main.url(forResource: "Mist", withExtension: "mov")
         }
         
         if videoURL == nil {
-            videoURL = Bundle.main.url(forResource: "Clouds", withExtension: "mp4")
+            videoURL = Bundle.main.url(forResource: "Clouds", withExtension: "mov")
         }
         return videoURL!
     }

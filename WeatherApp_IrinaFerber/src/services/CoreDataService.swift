@@ -14,20 +14,24 @@ class CoreDataService {
     
     static var weathersData: [NSManagedObject] = []
     
-    static func saveToLocalBase(_ temperature: String, _ main: String) {
+    static var managedContext: NSManagedObjectContext = {
         
+        var innerManagedContext: NSManagedObjectContext? = nil
         guard let appDelegate =
             UIApplication.shared.delegate as? AppDelegate else {
-                return
+                return innerManagedContext!
         }
-        
-        var managedContext: NSManagedObjectContext!
         
         if #available(iOS 10.0, *) {
-            managedContext = appDelegate.persistentContainer.viewContext
+            innerManagedContext = appDelegate.persistentContainer.viewContext
         } else {
-            managedContext = appDelegate.managedObjectContext
+            innerManagedContext = appDelegate.managedObjectContext
         }
+
+        return innerManagedContext!
+    }()
+    
+    static func saveToLocalBase(_ temperature: String, _ main: String) {
         
         let entity =
             NSEntityDescription.entity(forEntityName: "WeatherForecast",
@@ -35,7 +39,6 @@ class CoreDataService {
         
         let weather = NSManagedObject(entity: entity,
                                       insertInto: managedContext)
-        
         
         weather.setValue(temperature, forKeyPath: "temperature")
         weather.setValue(main, forKeyPath: "weatherType")
@@ -51,7 +54,6 @@ class CoreDataService {
         weather.setValue(timeString, forKey: "time")
         
         print("MapScreenInteractor/currentDate \(currentDate)")
-        
         print("MapScreenInteractor/dateString \(dateString)")
         print("MapScreenInteractor/timeString \(timeString)")
         print("MapScreenInteractor/weather \(weather)")
@@ -68,18 +70,6 @@ class CoreDataService {
     static func obtainListOfWeather() -> [Weather]  {
         
         var weathers = [Weather]()
-        
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return weathers
-        }
-        
-        var managedContext: NSManagedObjectContext!
-        
-        if #available(iOS 10.0, *) {
-            managedContext = appDelegate.persistentContainer.viewContext
-        } else {
-            managedContext = appDelegate.managedObjectContext
-        }
         
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "WeatherForecast")
         do {
@@ -105,17 +95,6 @@ class CoreDataService {
  
     static func obtainLastWeather() -> Int {
         
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return 0
-        }
-        
-        var managedContext: NSManagedObjectContext!
-        
-        if #available(iOS 10.0, *) {
-            managedContext = appDelegate.persistentContainer.viewContext
-        } else {
-            managedContext = appDelegate.managedObjectContext
-        }
         
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "WeatherForecast")
         do {
@@ -125,10 +104,11 @@ class CoreDataService {
         }
         weathersData.reverse()
         
-        if let temperature = weathersData[0].value(forKeyPath: "temperature") as? String {
-            return Int(temperature)!
+        if weathersData.count > 0 {
+            let temperature = weathersData[0].value(forKeyPath: "temperature") as? String
+            return Int(temperature!)!
         } else {
-            return -1000
+            return -999
         }
     }
     

@@ -12,7 +12,7 @@ import CoreData
 class ListOfWeatherViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
-    var weathers: [Weather] = []
+    var weathers = [Weather]()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -49,10 +49,11 @@ class ListOfWeatherViewController: BaseViewController, UITableViewDataSource, UI
             self.startLoading()
             self.weathers.removeAll()
             self.weathers = CoreDataService.obtainListOfWeather()
-            
-            self.tableView.reloadData()
-            let indexPath = IndexPath(row: 0, section: 0)
-            self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
+            if self.weathers.count > 0 {
+                self.tableView.reloadData()
+                let indexPath = IndexPath(row: 0, section: 0)
+                self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
+            }
             self.stopLoading()
         }
     }

@@ -140,6 +140,7 @@ class MapScreenViewController: BaseViewController, MapScreenViewInput, CLLocatio
             print("User denied access to location.")
             // Display the map using the default location.
             mapView.isHidden = false
+            promptToAppSettings()
         case .notDetermined:
             print("Location status not determined.")
         case .authorizedAlways: fallthrough
@@ -147,6 +148,30 @@ class MapScreenViewController: BaseViewController, MapScreenViewInput, CLLocatio
             print("Location status is OK.")
         }
     }
+    
+    fileprivate func promptToAppSettings() {
+        // prompt User with UIAlertView
+        
+        DispatchQueue.main.async(execute: { [unowned self] in
+            let message = NSLocalizedString("Weather App не имеет доступа к карте, пожалуйста, перейдите в настройки приватности, чтобы изменить это.", comment: "Alert message when the user has denied access")
+            let alertController = UIAlertController(title: "Weather App", message: message, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: NSLocalizedString("Oк", comment: "Alert OK button"), style: .cancel, handler: nil))
+            alertController.addAction(UIAlertAction(title: NSLocalizedString("Настройки", comment: "Alert button to open Settings"), style: .default, handler: { action in
+                let settingsUrl = NSURL(string:UIApplicationOpenSettingsURLString)
+                if let url = settingsUrl {
+                    DispatchQueue.main.async {
+                        if #available(iOS 10, *) {
+                            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+                        } else {
+                            UIApplication.shared.openURL(url as URL)
+                        }
+                    }
+                }
+            }))
+            self.present(alertController, animated: true, completion: nil)
+        })
+    }
+
 
 }
 

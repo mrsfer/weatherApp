@@ -40,16 +40,18 @@ class MapScreenPresenter: BasePresenter, MapScreenModuleInput, MapScreenViewOutp
                 return
             }
             
-            callback(valueWeather)
+            callback(valueWeather?.temperature)
             
             let lastWeather = CoreDataService.obtainLastWeather()
-            print(Swift.abs(lastWeather))
-            if  Swift.abs(Swift.abs(Int(valueWeather!)!) - Swift.abs(lastWeather)) >= 3 && (lastWeather != -1000) {
+            
+            if  (lastWeather - Int((valueWeather?.temperature)!)!) >= 3 && (lastWeather != -999) {
                 DispatchQueue.main.async {
-                    let temperatureDifference = Swift.abs(Swift.abs(Int(valueWeather!)!) - Swift.abs(lastWeather))
+                    let temperatureDifference = lastWeather - Int((valueWeather?.temperature)!)!
                     self?.showAlertScreen(temperatureDifference)
                 }
             }
+            
+            CoreDataService.saveToLocalBase((valueWeather?.temperature!)!, (valueWeather?.weatherType!)!)
         }
     }
     

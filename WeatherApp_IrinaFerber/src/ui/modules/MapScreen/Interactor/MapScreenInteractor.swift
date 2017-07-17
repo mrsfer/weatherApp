@@ -14,7 +14,7 @@ class MapScreenInteractor: BaseInteractor, MapScreenInteractorInput {
     
     var weatherEntity: [NSManagedObject] = []
     
-    func obtainWeather(with latitude: String, longitude: String, _ callback: @escaping (String?, [RequestError]?) -> Void) {
+    func obtainWeather(with latitude: String, longitude: String, _ callback: @escaping (Weather?, [RequestError]?) -> Void) {
         
         WeatherRequest(latitude: latitude, longitude: longitude).request { (json, errors) in
             if let errors = errors {
@@ -39,9 +39,7 @@ class MapScreenInteractor: BaseInteractor, MapScreenInteractorInput {
                     }
                 }
                 
-                CoreDataService.saveToLocalBase(weather.temperature!, weather.weatherType!)
-                
-                callback(weather.temperature, nil)
+                callback(weather, nil)
             }
         }
     }

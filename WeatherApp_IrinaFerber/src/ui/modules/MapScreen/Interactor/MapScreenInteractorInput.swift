@@ -10,5 +10,5 @@ import Foundation
 
 protocol MapScreenInteractorInput {
     
-    func obtainWeather(with latitude: String, longitude: String, _ callback: @escaping (String?, [RequestError]?) -> Void)
+    func obtainWeather(with latitude: String, longitude: String, _ callback: @escaping (Weather?, [RequestError]?) -> Void)
 }
