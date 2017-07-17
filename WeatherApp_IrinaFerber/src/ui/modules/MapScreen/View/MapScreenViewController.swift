@@ -153,7 +153,7 @@ class MapScreenViewController: BaseViewController, MapScreenViewInput, CLLocatio
         // prompt User with UIAlertView
         
         DispatchQueue.main.async(execute: { [unowned self] in
-            let message = NSLocalizedString("Weather App не имеет доступа к карте, пожалуйста, перейдите в настройки приватности, чтобы изменить это.", comment: "Alert message when the user has denied access")
+            let message = NSLocalizedString("Weather App не имеет доступа к Вашему местоположению, пожалуйста, перейдите в настройки приватности, чтобы изменить это.", comment: "Alert message when the user has denied access")
             let alertController = UIAlertController(title: "Weather App", message: message, preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: NSLocalizedString("Oк", comment: "Alert OK button"), style: .cancel, handler: nil))
             alertController.addAction(UIAlertAction(title: NSLocalizedString("Настройки", comment: "Alert button to open Settings"), style: .default, handler: { action in

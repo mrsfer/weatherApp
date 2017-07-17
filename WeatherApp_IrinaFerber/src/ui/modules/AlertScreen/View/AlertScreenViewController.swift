@@ -21,7 +21,7 @@ class AlertScreenViewController: BaseViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(closeAlert), name: .UIApplicationWillResignActive, object: nil)
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0)
         
-        temperatureDifferenceLabel.text = "Температура уменьшилась на " + String(temperatureDifference!) + " градуса"
+        temperatureDifferenceLabel.text = "Температура уменьшилась на " + String(temperatureDifference!) + " градуса."
         // Do any additional setup after loading the view.
     }
     

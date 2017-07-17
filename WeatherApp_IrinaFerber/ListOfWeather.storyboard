@@ -32,41 +32,41 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" rowHeight="73" id="Rt7-MC-LGs" customClass="WeatherDataTableViewCell" customModule="WeatherApp_IrinaFerber" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="73"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" rowHeight="91" id="Rt7-MC-LGs" customClass="WeatherDataTableViewCell" customModule="WeatherApp_IrinaFerber" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="91"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rt7-MC-LGs" id="9gF-hI-EUc">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="72.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="90.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0q9-d3-3ZF">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="72.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="90.5"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0a-pp-Hs8">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="72.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="90.5"/>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROn-sE-ve0">
-                                                    <rect key="frame" x="15" y="13" width="42" height="21"/>
+                                                    <rect key="frame" x="15" y="21" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1UM-Z3-F5V">
-                                                    <rect key="frame" x="15" y="40" width="37" height="21"/>
+                                                    <rect key="frame" x="15" y="48" width="37" height="21"/>
                                                     <fontDescription key="fontDescription" name="SFUIDisplay-Ultralight" family="SF UI Display" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYH-Bv-1XT">
-                                                    <rect key="frame" x="237.5" y="7" width="109" height="60"/>
+                                                    <rect key="frame" x="237.5" y="15.5" width="109" height="60"/>
                                                     <fontDescription key="fontDescription" name="SFUIDisplay-Ultralight" family="SF UI Display" pointSize="50"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="˚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50F-Ft-WsT">
-                                                    <rect key="frame" x="346.5" y="6.5" width="13.5" height="60"/>
+                                                    <rect key="frame" x="346.5" y="15.5" width="13.5" height="60"/>
                                                     <fontDescription key="fontDescription" name="SFUIDisplay-Ultralight" family="SF UI Display" pointSize="40"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -74,7 +74,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="50F-Ft-WsT" firstAttribute="height" secondItem="CYH-Bv-1XT" secondAttribute="height" id="2j2-HO-xTV"/>
-                                                <constraint firstItem="ROn-sE-ve0" firstAttribute="top" secondItem="9gF-hI-EUc" secondAttribute="top" constant="13" id="2s4-y4-SsB"/>
+                                                <constraint firstItem="ROn-sE-ve0" firstAttribute="top" secondItem="9gF-hI-EUc" secondAttribute="top" constant="21" id="2s4-y4-SsB"/>
                                                 <constraint firstItem="b0a-pp-Hs8" firstAttribute="top" secondItem="0q9-d3-3ZF" secondAttribute="top" id="4Rk-eu-24O"/>
                                                 <constraint firstItem="0q9-d3-3ZF" firstAttribute="leading" secondItem="9gF-hI-EUc" secondAttribute="leading" id="7JI-e0-qTg"/>
                                                 <constraint firstAttribute="trailing" secondItem="50F-Ft-WsT" secondAttribute="trailing" constant="15" id="A5c-fk-CBc"/>
@@ -85,7 +85,7 @@
                                                 <constraint firstItem="0q9-d3-3ZF" firstAttribute="top" secondItem="9gF-hI-EUc" secondAttribute="top" id="V8L-eD-N08"/>
                                                 <constraint firstItem="1UM-Z3-F5V" firstAttribute="top" secondItem="ROn-sE-ve0" secondAttribute="bottom" constant="6" id="W7P-9K-rhG"/>
                                                 <constraint firstItem="1UM-Z3-F5V" firstAttribute="leading" secondItem="9gF-hI-EUc" secondAttribute="leading" constant="15" id="bEy-NA-rQq"/>
-                                                <constraint firstAttribute="bottom" secondItem="1UM-Z3-F5V" secondAttribute="bottom" constant="11" id="dTq-pV-qIf"/>
+                                                <constraint firstAttribute="bottom" secondItem="1UM-Z3-F5V" secondAttribute="bottom" constant="21" id="dTq-pV-qIf"/>
                                                 <constraint firstItem="b0a-pp-Hs8" firstAttribute="leading" secondItem="0q9-d3-3ZF" secondAttribute="leading" id="eFJ-hc-E03"/>
                                                 <constraint firstItem="50F-Ft-WsT" firstAttribute="centerY" secondItem="9gF-hI-EUc" secondAttribute="centerY" id="pgW-Y2-d4r"/>
                                                 <constraint firstItem="ROn-sE-ve0" firstAttribute="leading" secondItem="9gF-hI-EUc" secondAttribute="leading" constant="15" id="uv1-FF-FvD"/>
