@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JSj-4a-feo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mainscreen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainScreenViewController" customModule="WeatherApp_IrinaFerber" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iF1-C0-d9B">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem image="mapIcon" id="DeO-LY-1ed">
+                                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                                    </tabBarItem>
+                                    <tabBarItem image="listIcon1" id="z7w-bB-hj6">
+                                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                                    </tabBarItem>
+                                </items>
+                            </tabBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CRW-Gy-QpJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iF1-C0-d9B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IHQ-yb-Zjr"/>
+                            <constraint firstItem="CRW-Gy-QpJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JeC-u7-idJ"/>
+                            <constraint firstItem="CRW-Gy-QpJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="O1N-z5-QOr"/>
+                            <constraint firstAttribute="trailing" secondItem="iF1-C0-d9B" secondAttribute="trailing" id="bXl-FL-PmJ"/>
+                            <constraint firstAttribute="trailing" secondItem="CRW-Gy-QpJ" secondAttribute="trailing" id="chQ-pg-S98"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iF1-C0-d9B" secondAttribute="bottom" id="oID-yx-7vw"/>
+                            <constraint firstItem="iF1-C0-d9B" firstAttribute="top" secondItem="CRW-Gy-QpJ" secondAttribute="bottom" id="pti-If-mHK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bnx-wB-C4M"/>
+                    <connections>
+                        <outlet property="containerView" destination="CRW-Gy-QpJ" id="Tso-ct-uv4"/>
+                        <outlet property="listOfWeatherItem" destination="z7w-bB-hj6" id="TKf-wP-8PE"/>
+                        <outlet property="mapItem" destination="DeO-LY-1ed" id="4eZ-sh-md8"/>
+                        <outlet property="tabBar" destination="iF1-C0-d9B" id="KmL-rT-XX0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="VDS-I7-UDK" customClass="MainScreenModuleInitializer" customModule="WeatherApp_IrinaFerber" customModuleProvider="target">
+                    <connections>
+                        <outlet property="mainscreenViewController" destination="BYZ-38-t0r" id="7k6-8Q-6GA"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GG9-yN-c6m">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JSj-4a-feo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="H9x-wO-Em3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TXI-vJ-jsW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="066-Op-NrD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="191" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="listIcon1" width="52" height="52"/>
+        <image name="mapIcon" width="50" height="50"/>
+    </resources>
+</document>

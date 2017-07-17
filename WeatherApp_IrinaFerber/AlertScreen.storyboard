@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HPg-a2-DDR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Semibold.otf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Alert Screen View Controller-->
+        <scene sceneID="XzU-Mf-gr6">
+            <objects>
+                <viewController restorationIdentifier="PopUpDeleteGroupVC" storyboardIdentifier="PopUpDeleteGroupVC" id="HPg-a2-DDR" customClass="AlertScreenViewController" customModule="WeatherApp_IrinaFerber" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RXr-e3-PUB"/>
+                        <viewControllerLayoutGuide type="bottom" id="AVO-AM-SHT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v81-xa-HfP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckr-ag-Ard">
+                                <rect key="frame" x="30" y="259" width="315" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXV-ri-zI6">
+                                        <rect key="frame" x="107" y="90" width="101" height="36"/>
+                                        <color key="backgroundColor" red="0.0078431372550000003" green="0.42745098040000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="20"/>
+                                        <state key="normal" title="Ok">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="okButton:" destination="HPg-a2-DDR" eventType="touchUpInside" id="PT3-4U-wnf"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Температура изменилась на 3 градуса" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOc-R7-eQE">
+                                        <rect key="frame" x="52" y="29" width="211" height="41"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="AXV-ri-zI6" secondAttribute="bottom" constant="24" id="3TA-f9-3Pj"/>
+                                    <constraint firstItem="QOc-R7-eQE" firstAttribute="centerX" secondItem="ckr-ag-Ard" secondAttribute="centerX" id="L7I-6g-DuG"/>
+                                    <constraint firstAttribute="height" constant="150" id="LJB-Wa-2Ak"/>
+                                    <constraint firstItem="AXV-ri-zI6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="QOc-R7-eQE" secondAttribute="bottom" constant="8" id="Mmo-ht-did"/>
+                                    <constraint firstItem="QOc-R7-eQE" firstAttribute="top" secondItem="ckr-ag-Ard" secondAttribute="top" constant="29" id="Oyg-KO-3IY"/>
+                                    <constraint firstItem="AXV-ri-zI6" firstAttribute="centerX" secondItem="ckr-ag-Ard" secondAttribute="centerX" id="nvS-Od-hJw"/>
+                                    <constraint firstItem="QOc-R7-eQE" firstAttribute="width" secondItem="ckr-ag-Ard" secondAttribute="width" multiplier="0.618" constant="16.330000000000013" id="rmr-GI-Byz"/>
+                                    <constraint firstItem="AXV-ri-zI6" firstAttribute="width" secondItem="ckr-ag-Ard" secondAttribute="width" multiplier="0.295" constant="8.0750000000000028" id="vo9-j5-Gyd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ckr-ag-Ard" firstAttribute="centerY" secondItem="v81-xa-HfP" secondAttribute="centerY" id="LAe-ca-QYn"/>
+                            <constraint firstItem="ckr-ag-Ard" firstAttribute="centerX" secondItem="v81-xa-HfP" secondAttribute="centerX" id="Mg8-yh-C6I"/>
+                            <constraint firstAttribute="trailing" secondItem="ckr-ag-Ard" secondAttribute="trailing" constant="30" id="VOG-rL-53R"/>
+                            <constraint firstItem="ckr-ag-Ard" firstAttribute="leading" secondItem="v81-xa-HfP" secondAttribute="leading" constant="30" id="g1b-2T-dTr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="temperatureDifferenceLabel" destination="QOc-R7-eQE" id="6e3-E0-HIC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5mG-Qs-Hbd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7972" y="1378.56071964018"/>
+        </scene>
+    </scenes>
+</document>
